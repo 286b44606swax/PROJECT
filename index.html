@@ -3,100 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>! Ais here</title>
+    <title>Function Family Album - Nature Theme</title>
     <style>
         body {
-            background: url('https://media3.giphy.com/media/7OXmhlBM8EzDPKbiIA/200.gif?cid=6c09b9521pjhe13bk9usavloan5s9cuulrnfhvflvdu3188u&ep=v1_gifs_search&rid=200.gif&ct=g') no-repeat center center fixed;
-            background-size: cover;
-            color: red;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .album {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .cover {
             text-align: center;
-            font-family: Tempus Sans ITC
-, sans-serif;
+            background: linear-gradient(to bottom, #4CAF50, #2E7D32);
+            color: white;
+            padding: 50px;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
-        h1 {
-            font-size: 30px;
-            margin-top: 350px;
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .title-page {
+            text-align: center;
+            padding: 40px;
+            background-color: #e8f5e8;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
-        .info {
-            margin-top: 50px;
-            font-size: 30px;
+        .page {
+            page-break-before: always;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            background-color: #f9f9f9;
         }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+        .function-title {
+            font-size: 24px;
+            color: #2E7D32;
+            margin-bottom: 10px;
         }
-        .image-box {
-            border: 2px solid rgb(8, 8, 8);
-            padding: 1px;
+        .graph {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .t-chart {
+            margin: 20px 0;
             display: inline-block;
         }
-        .discord-link {
-            font-size: 24px;
-            margin-top: 20px;
-            text-decoration: none;
-            color: red;
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .info {
+            margin: 10px 0;
+        }
+        .picture {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .theme-note {
+            font-style: italic;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <h1> Venom is watching hhhhh</h1>
-    <div class="container">
-        <div class="image-box">
-            <img src= "https://i.pinimg.com/originals/04/67/ac/0467acd8140a9370d610bb2ac71aa305.gif" alt="Skull Image" width="500">
+    <div class="album">
+        <!-- Front Cover -->
+        <div class="cover">
+            <h1>Function Family Album</h1>
+            <p>Nature Theme</p>
+            <p>Exploring Functions in the Wild</p>
+            <div class="theme-note">All elements relate to nature: graphs as landscapes, functions as natural phenomena.</div>
         </div>
-        <div class="info" id="user-info">
-            <p><strong>IP:</strong> Loading...</p>
-            <p><strong>City:</strong> Loading...</p>
-            <p><strong>Country:</strong> Loading...</p>
-            <p><strong>Timezone:</strong> Loading...</p>
+
+        <!-- Title Page -->
+        <div class="title-page">
+            <h2>Function Family Album</h2>
+            <p>By: Salem Alradaan</p>
+            <p>Theme: Nature</p>
+            <p>Year: 2025-2026</p>
         </div>
-        <a href="https://discord.gg/m-8" class="discord-link" target="_blank">discord.gg/m-8</a>
-    </div>
-    <audio autoplay loop>
-        <source src="https://github.com/ttt402d/toxic44442/raw/refs/heads/main/0131dddddd.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <script>
-        fetch('https://ipapi.co/json/')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('user-info').innerHTML = 
-                    <p><strong>IP:</strong> ${data.ip}</p>
-                    <p><strong>City:</strong> ${data.city}</p>
-                    <p><strong>Country:</strong> ${data.country_name}</p>
-                    <p><strong>Timezone:</strong> ${data.timezone}</p>
-                ;
-            })
-            .catch(() => {
-                document.getElementById('user-info').innerHTML = '<p>Failed to load IP data.</p>';
-            });
 
-        // Open 15 tabs to the Discord link (may be blocked by browsers)
-        for (let i = 0; i < 15; i++) {
-            window.open('https://discord.gg/69q', '_blank');
-        }
-          document.addEventListener("keydown", function(event) {
-            if (event.key.toLowerCase() === "w") {
-                setInterval(() => {
-                    window.open("https://discord.gg/m-8", "_blank");
-                }, 500);
-                
-                window.open('https://www.youtube.com/watch?v=XZ9DseQ5Ubw&list=RDK3K1sqnyZP4&index=11', '_blank');
-                window.open('https://www.youtube.com/watch?v=XZ9DseQ5Ubw&list=RDK3K1sqnyZP4&index=11', '_blank');
-                window.open('https://www.youtube.com/watch?v=XZ9DseQ5Ubw&list=RDK3K1sqnyZP4&index=11', '_blank');
+        <!-- Quadratic Function -->
+        <div class="page">
+            <h2 class="function-title">Quadratic Function: f(x) = x²</h2>
+            <div class="info"><strong>Equation:</strong> f(x) = x²</div>
+            <div class="graph">
+                <svg width="400" height="300" viewBox="-5 -5 10 10">
+                    <!-- Axes -->
+                    <line x1="-5" y1="0" x2="5" y2="0" stroke="black" stroke-width="0.1"/>
+                    <line x1="0" y1="-5" x2="0" y2="5" stroke="black" stroke-width="0.1"/>
+                    <!-- Parabola -->
+                    <path d="M -2 4 Q 0 -1 2 4" stroke="green" stroke-width="0.2" fill="none"/>
+                    <!-- Points from T-chart -->
+                    <circle cx="-2" cy="4" r="0.1" fill="red"/>
+                    <circle cx="-1" cy="1" r="0.1" fill="red"/>
+                    <circle cx="0" cy="0" r="0.1" fill="red"/>
+                    <circle cx="1" cy="1" r="0.1" fill="red"/>
+                    <circle cx="2" cy="4" r="0.1" fill="red"/>
+                </svg>
+            </div>
+            <div class="t-chart">
+                <table>
+                    <tr><th>x</th><th>f(x)</th></tr>
+                    <tr><td>-2</td><td>4</td></tr>
+                    <tr><td>-1</td><td>1</td></tr>
+                    <tr><td>0</td><td>0</td></tr>
+                    <tr><td>1</td><td>1</td></tr>
+                    <tr><td>2</td><td>4</td></tr>
+                </table>
+            </div>
+            <div class="info"><strong>Domain:</strong> All real numbers</div>
+            <div class="info"><strong>Range:</strong> [0, ∞)</div>
+            <div class="info"><strong>x-intercepts:</strong> (0,0)</div>
+            <div class="info"><strong>y-intercept:</strong> (0,0)</div>
+            <div class="info"><strong>Maximum/Minimum:</strong> Minimum at (0,0)</div>
+            <div class="info"><strong>End Behavior:</strong> As x → ±∞, f(x) → ∞</div>
+            <div class="info"><strong>Real-World Example:</strong> The path of a thrown ball follows a parabolic trajectory, like a waterfall arching in nature.</div>
+            <div class="picture">
+                <img src="https://th.bing.com/th/id/OIP.0gKM-HlbNy72C7Jq81hb7QHaFi?w=250&h=188&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1" alt="Parabolic Waterfall">
+                <p>A waterfall forming a parabolic shape.</p>
+            </div>
+        </div>
 
+        <!-- Quadratic Child 1 -->
+        <div class="page">
+            <h2 class="function-title">Child 1: Vertical Shift - f(x) = x² + 2</h2>
+            <div class="info"><strong>Equation:</strong> f(x) = x² + 2</div>
+            <div class="graph">
+                <svg width="400" height="300" viewBox="-5 -5 10 10">
+                    <line x1="-5" y1="0" x2="5" y2="0" stroke="black" stroke-width="0.1"/>
+                    <line x1="0" y1="-5" x2="0" y2="5" stroke="black" stroke-width="0.1"/>
+                    <path d="M -2 6 Q 0 1 2 6" stroke="green" stroke-width="0.2" fill="none"/>
+                    <circle cx="-3" cy="11" r="0.1" fill="red"/>
+                    <circle cx="-1" cy="3" r="0.1" fill="red"/>
+                    <circle cx="0" cy="2" r="0.1" fill="red"/>
+                    <circle cx="1" cy="3" r="0.1" fill="red"/>
+                    <circle cx="3" cy="11" r="0.1" fill="red"/>
+                </svg>
+            </div>
+            <div class="t-chart">
+                <table>
+                    <tr><th>x</th><th>f(x)</th></tr>
+                    <tr><td>-3</td><td>11</td></tr>
+                    <tr><td>-1</td><td>3</td></tr>
+                    <tr><td>0</td><td>2</td></tr>
+                    <tr><td>1</td><td>3</td></tr>
+                    <tr><td>3</td><td>11</td></tr>
+                </table>
+            </div>
+            <div class="info"><strong>Description:</strong> Shifted up by 2 units, raising the minimum value.</div>
+            <div class="info"><strong>Domain:</strong> All real numbers</div>
+            <div class="info"><strong>Range:</strong> [2, ∞)</div>
+            <div class="info"><strong>x-intercepts:</strong> None</div>
+            <div class="info"><strong>y-intercept:</strong> (0,2)</div>
+            <div class="info"><strong>Maximum/Minimum:</strong> Minimum at (0,2)</div>
+        </div>
 
+        <!-- Quadratic Child 2 -->
+        <div class="page">
+            <h2 class="function-title">Child 2: Horizontal Shift - f(x) = (x - 1)²</h2>
+            <div class="info"><strong>Equation:</strong> f(x) = (x - 1)²</div>
+            <div class="graph">
+                <svg width="400" height="300" viewBox="-5 -5 10 10">
+                    <line x1="-5" y1="0" x2="5" y2="0" stroke="black" stroke-width="0.1"/>
+                    <line x1="0" y1="-5" x2="0" y2="5" stroke="black" stroke-width="0.1"/>
+                    <path d="M -1 4 Q 1 -1 3 4" stroke="green" stroke-width="0.2" fill="none"/>
+                    <circle cx="-2" cy="9" r="0.1" fill="red"/>
+                    <circle cx="0" cy="1" r="0.1" fill="red"/>
+                    <circle cx="1" cy="0" r="0.1" fill="red"/>
+                    <circle cx="2" cy="1" r="0.1" fill="red"/>
+                    <circle cx="4" cy="9" r="0.1" fill="red"/>
+                </svg>
+            </div>
+            <div class="t-chart">
+                <table>
+                    <tr><th>x</th><th>f(x)</th></tr>
+                    <tr><td>-2</td><td>9</td></tr>
+                    <tr><td>0</td><td>1</td></tr>
+                    <tr><td>1</td><td>0</td></tr>
+                    <tr><td>2</td><td>1</td></tr>
+                    <tr><td>4</td><td>9</td></tr>
+                </table>
+            </div>
+            <div class="info"><strong>Description:</strong> Shifted right by 1 unit, moving the vertex.</div>
+            <div class="info"><strong>Domain:</strong> All real numbers</div>
+            <div class="info"><strong>Range:</strong> [0, ∞)</div>
+            <div class="info"><strong>x-intercepts:</strong> (1,0)</div>
+            <div class="info"><strong>y-intercept:</strong> (0,1)</div>
+            <div class="info"><strong>Maximum/Minimum:</strong> Minimum at (1,0)</div>
+        </div>
 
-            }
-        });
-    </script>
+        <!-- Quadratic Child 3 -->
+        <div class="page">
+            <h2 class="function-title">Child 3: Vertical Stretch - f(x) = 2x²</h2>
+            <div class="info"><strong>Equation:</strong> f(x) = 2x²</div>
+            <div class="graph">
+                <svg width="400" height="300" viewBox="-5 -5 10 10">
+                    <line x1="-5" y1="0" x2="5" y2="0" stroke="black" stroke-width="0.1"/>
+                    <line x1="0" y1="-5" x2="0" y2="5" stroke="black" stroke-width="0.1"/>
+                    <path d="M -2 8 Q 0 -2 2 8" stroke="green" stroke-width="0.2" fill="none"/>
+                    <circle cx="-2" cy="8" r="0.1" fill="red"/>
+                    <circle cx="-1" cy="2" r="0.1" fill="red"/>
+                    <circle cx="0" cy="0" r="0.1" fill="red"/>
+                    <circle cx="1" cy="2" r="0.1" fill="red"/>
+                    <circle cx="2" cy="8" r="0.1" fill="red"/>
+                </svg>
+            </div>
+            <div class="t-chart">
+                <table>
+                    <tr><th>x</th><th>f(x)</th></tr>
+                    <tr><td>-2</td><td>8</td></tr>
+                    <tr><td>-1</td><td>2</td></tr>
+                    <tr><td>0</td><td>0</td></tr>
+                    <tr><td>1</td><td>2</td></tr>
+                    <tr><td>2</td><td>8</td></tr>
+                </table>
+            </div>
+            <div class="info"><strong>Description:</strong> Vertically stretched by a factor of 2, making it steeper.</div>
+            <div class="info"><strong>Domain:</strong> All real numbers</div>
+            <div class="info"><strong>Range:</strong> [0, ∞)</div>
+            <div class="info"><strong>x-intercepts:</strong> (0,0)</div>
+            <div class="info"><strong>y-intercept:</strong> (0,0)</div>
+            <div class="info"><strong>Maximum/Minimum:</strong> Minimum at (0,0)</div>
+        </div>
 
-</body>
-</html>
+        <!-- Absolute Value Function -->
+        <div class="page">
+            <h2 class="function-title">Absolute Value Function: f(x) = |x|</h2>
+            <div class="info"><strong>Equation:</strong> f(x) = |x|</div>
+            <div class="graph">
+                <svg width="400" height="300" viewBox="-5 -5 10 10">
+                    <line x1="-5" y1="0" x2="5" y2="0" stroke="black" stroke-width="0.1"/>
+                    <line x1="0" y1="-5" x2="0" y2="5" stroke="black" stroke-width="0.1"/>
+                    <path d="M -2 2 L 0 0 L 2 2" stroke="blue" stroke-width="0.2" fill="none"/>
+                    <circle cx="-2" cy="2" r="0.1" fill="red"/>
+                    <circle cx="-1" cy="1" r="0.1" fill="red"/>
+                    <circle cx="0" cy="0" r="0.1" fill="red"/>
+                    <circle cx="1" cy="1" r="0.1" fill="red"/>
+                    <circle cx="2" cy="2" r="0.1" fill="red"/>
+                </svg>
+            </div>
+            <div class="t-chart">
+                <table>
+                    <tr><th>x</th><th>f(x)</th></tr>
+                    <tr><td>-2</td><td>2</td></tr>
+                    <tr><td>-1</td><td>1</td></tr>
+                    <tr><td>0</td><td>0</td></tr>
+                    <tr><td>1</td><td>1</td></tr>
+                    <tr><td>2</td><td>2</td></tr>
+                </table>
+            </div>
+            <div class="info"><strong>Domain:</strong> All real numbers</div>
+            <div class="info"><strong>Range:</strong> [0, ∞)</div>
+            <div class="info"><strong>x-intercepts:</strong> (0,0)</div>
+            <div class="info"><strong>y-intercept:</strong> (0,0)</div>
+            <div class="info"><strong>Maximum/Minimum:</strong> Minimum at (0,0)</div>
+            <div class="info"><strong>End Behavior:</strong> As x → ±∞, f(x) → ∞</div>
+            <div class="info"><strong>Real-World Example:</strong> Distance from a point, like the height of a mountain peak from sea level.</div>
+            <div class="picture">
+                <img src="https://th.bing.com/th/id/OIP.cXr9jVsIMQhXU37jz3bfKgHaFc?w=254&h=187&c=7&r=0&o=7&cb=ucfimg2&pid=1.7&rm=3&ucfimg=1" alt="Mountain Peak">
+                <p>A mountain peak rising symmetrically.</p>
+            </div>
+        </div>
+
+        <!-- Absolute Value Child 1 -->
+        <div class="page">
+            <h2 class="function-title">Child 1: Vertical Shift - f(x) = |x| + 3</h2>
+            <div class="info"><strong>Equation:</strong> f(x) = |x| + 3</div>
+            <div class="graph">
+                <svg width="400" height="300" viewBox="-5 -5 10 10">
+                    <line x1="-5" y1="0" x2="5" y2="0" stroke="black" stroke-width="0.1"/>
+                    <line x1="0" y1="-5" x2="0" y2="5" stroke="black" stroke-width="0.1"/>
+                    <path d="M -2 5 L 0 3 L 2 5" stroke="blue" stroke-width="0.2" fill="none"/>
+                    <circle cx="-3" cy="6" r="0.1" fill="red"/>
+                    <circle cx="-1" cy="4" r="0.1" fill="red"/>
+                    <circle cx="0" cy="3" r="0.1" fill="red"/>
+                    <circle cx="1" cy="4" r="0.1" fill="red"/>
+                    <circle cx="3" cy="6" r="0.1" fill="red"/>
+                </svg>
+            </div>
+            <div class="t-chart">
+                <table>
+                    <tr><th>x</th><th>f(x)</th></tr>
+                    <tr><td>-3</td><td>6</td
